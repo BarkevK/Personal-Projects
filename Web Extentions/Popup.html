@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Reminder</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS for styling -->
+</head>
+<body>
+    <h1>Set a Reminder</h1>
+    <form id="reminderForm">
+        <div>
+            <label for="websiteUrl">Website URL:</label>
+            <input type="text" id="websiteUrl" name="websiteUrl" placeholder="https://www.example.com">
+        </div>
+        <div>
+            <label for="reminderText">Reminder:</label>
+            <input type="text" id="reminderText" name="reminderText" placeholder="What to remember?">
+        </div>
+        <button type="submit">Set Reminder</button>
+    </form>
+
+    <script src="popup.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>
