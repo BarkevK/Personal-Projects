@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import simpledialog, filedialog, messagebox
+from tkinter import ttk, filedialog, messagebox, simpledialog
 from lxml import etree
 
 def load_xml(file_path):
@@ -58,15 +58,28 @@ def on_open_file():
             messagebox.showinfo("File Loaded", "XML file loaded successfully!")
 
 # GUI 
+
+def on_exit():
+    root.quit()  
+
 root = tk.Tk()
-root.title("XML Record Editor")
+root.title("Football Manager Graphics Faces Configurator")
+root.geometry("400x250")  # You can adjust the size as needed
 
-file_path = tk.StringVar(root)
 
-open_file_button = tk.Button(root, text="Open XML File", command=on_open_file)
-open_file_button.pack(pady=10)
+style = ttk.Style()
+style.theme_use('clam') 
 
-add_button = tk.Button(root, text="Add Record", command=on_add)
-add_button.pack(pady=20)
+open_file_button = ttk.Button(root, text="Open XML File", command=on_open_file)
+open_file_button.pack(pady=10, padx=10)
+
+add_button = ttk.Button(root, text="Add Record", command=on_add)
+add_button.pack(pady=20, padx=10)
+
+exit_button = ttk.Button(root, text="Exit", command=on_exit)
+exit_button.pack(pady=10, padx=10, side=tk.BOTTOM)
+
+signature_label = ttk.Label(root, text="Made by BarkevKS", font=("Helvetica", 8))
+signature_label.pack(side=tk.BOTTOM, fill=tk.X, padx=10, pady=5)
 
 root.mainloop()
