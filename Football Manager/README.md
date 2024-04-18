@@ -33,8 +33,7 @@ To set up the application on your local machine, follow these steps:
 Ensure Python is installed, then run:
    ```bash
    pip install lxml
-And also:
-   ```bash
+   
    pip install lxml pillow
 
 
