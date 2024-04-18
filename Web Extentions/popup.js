@@ -30,4 +30,17 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+
+    removeForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const removeUrl = document.getElementById('removeUrl').value;
+
+        chrome.storage.local.remove(removeUrl, function() {
+            console.log('Reminder removed for ' + removeUrl);
+            alert('Reminder removed!');
+            removeForm.reset();
+        });
+    });
 });
+
+
