@@ -50,8 +50,8 @@ Contributions to this project are welcome. To contribute:
 
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/BarkevKS)  
-Project Link: []
+Your Name - [@BarkevKS](https://twitter.com/BarkevKS)  
+Project Link: [https://github.com/BarkevK/Personal-Projects](https://github.com/BarkevK/Personal-Projects/blob/main/Football%20Manager/FM_XML_adder.py)
 
   
    
